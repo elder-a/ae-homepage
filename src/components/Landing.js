@@ -2,8 +2,14 @@
 function Landing() {
   return (
     <div className="backGround">
-      <p>
-        This is the site landing page.
+      <p className="textHiLocation">
+        HI
+      </p>
+      <p className="textAndrewLocation">
+        I'm Andrew Elder.
+      </p>
+      <p className="textTitleLocation">
+        An Application Developer in Toronto, Canada.
       </p>
     </div>
   );

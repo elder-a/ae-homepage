@@ -47,5 +47,32 @@ body {
     height: 93.2vh;
   }
 
+  /* top, right, bottom, left */
+  .textHiLocation {
+    padding: 10vh 10vh 0vh 20vh;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 250px;
+  }
+  
+  .textAndrewLocation {
+    padding: 6vh 10vh 0vh 20vh;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 100px;
+  }
+
+  .textTitleLocation {
+    padding: 0vh 10vh 0vh 20vh;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+
+
+
+
+
   
 
