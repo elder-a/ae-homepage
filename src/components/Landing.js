@@ -1,12 +1,13 @@
-import NavBarComp from "./NavBarComp";
 import "../css/base.css";
 
 function Landing() {
   return (
-    <div className="backGround backGroundSize">
-      <p className="textHiLocation">
-        HI
-      </p>
+    <div className="backGround backGroundSize ">
+      <div className="flexAttempt">
+        <p className="textHiLocation typewriterHi">
+          HI
+        </p>
+      </div>
       <p className="textAndrewLocation">
         I'm Andrew Elder.
       </p>
