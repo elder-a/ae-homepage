@@ -12,8 +12,7 @@ import Projects from "./components/Projects";
 export default function App() {
   return (
     <div>
-      <NavBarComp/>
-      <div className="bottomborder"></div>
+      <NavBarComp className="navSize" />
         <BrowserRouter>
           <Routes>
             <Route path="gallery" element={<Gallery />} />

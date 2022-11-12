@@ -1,7 +1,7 @@
 
 function Landing() {
   return (
-    <div>
+    <div className="backGround">
       <p>
         This is the site landing page.
       </p>

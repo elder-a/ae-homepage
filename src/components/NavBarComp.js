@@ -6,7 +6,7 @@ import '../css/base.css';
 function NavBarComp() {
 
   return (
-    <div className="bottomborder">
+    <div className="bottomborder navBarFont" >
       <Navbar bg="light" expand="lg"  className="someclass">
         <Container className="noMar noPad">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -15,8 +15,8 @@ function NavBarComp() {
               <Nav.Link href="/home">Home</Nav.Link>
               <Nav.Link href="/experiences">Experiences</Nav.Link>
               <Nav.Link href="/projects">Projects</Nav.Link>
-              <Nav.Link href="/dayUpdates">Daily Updates</Nav.Link>
-              <Nav.Link href="/gallery">Photo Gallery</Nav.Link>
+              <Nav.Link href="/dayUpdates">Dailys</Nav.Link>
+              <Nav.Link href="/gallery">Gallery</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
