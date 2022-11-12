@@ -3,8 +3,8 @@ import "../css/base.css";
 function Landing() {
   return (
     <div className="backGround backGroundSize ">
-      <div className="flexAttempt">
-        <p className="textHiLocation typewriterHi">
+      <div className="typewriterHi">
+        <p className="textHiLocation">
           HI
         </p>
       </div>

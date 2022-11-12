@@ -48,14 +48,14 @@ body {
   
 
   /* Landing Page styles */
-  .backGround {
-    background-color: lightblue;
+  .backGroundExp {
+    background-color: lightcoral;
     height: 100%;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
   }
 
-  .backGroundSize {
+  .backGroundSizeExp {
     height: 93.1vh;
   }
 
