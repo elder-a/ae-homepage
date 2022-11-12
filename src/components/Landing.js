@@ -1,7 +1,9 @@
+import NavBarComp from "./NavBarComp";
+import "../css/base.css";
 
 function Landing() {
   return (
-    <div className="backGround">
+    <div className="backGround backGroundSize">
       <p className="textHiLocation">
         HI
       </p>

@@ -34,39 +34,57 @@ body {
   .bottomborder {
     border-bottom-style: solid;
     border-bottom-color: black;
-    border-bottom-width: 0.2vh;
+    border-bottom-width: 0.2%;
   }
+  .fullWidth {width: 100%};
   .noPad {padding: 0px 0px 0px 0px;}
   .noMar {margin: 0px 0px 0px 0px;}
 
   .navSize{ height: 4.8vh;}
+
+  .linkedSize{ 
+    height: 40px; 
+    width: auto;
+    padding: 0.1vh 10px 0px 0px;
+    float: right;
+  }
   
+
   /* Landing Page styles */
   .backGround {
     background-color: lightblue;
-    height: 93.2vh;
+    height: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .backGroundSize {
+    height: 93.1vh;
   }
 
   /* top, right, bottom, left */
   .textHiLocation {
-    padding: 10vh 10vh 0vh 20vh;
+    padding: 5% 0% 0% 10%;
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
-    font-size: 250px;
+    font-size: 25vh;
+    background-color: lightblue;
   }
   
   .textAndrewLocation {
-    padding: 6vh 10vh 0vh 20vh;
+    padding: 4% 10% 0% 10%;
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
-    font-size: 100px;
+    font-size: 10vh;
+    background-color: lightblue;
   }
 
   .textTitleLocation {
-    padding: 0vh 10vh 0vh 20vh;
+    padding: 0% 10% 0% 10%;
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 5vh;
+    background-color: lightblue;
   }
 
 
