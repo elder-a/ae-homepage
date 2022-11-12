@@ -1,0 +1,46 @@
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+
+/*
+body {
+    margin: 25px;
+    background-color: rgb(240,240,240);
+    font-family: arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 5px;
+  }
+  
+  */
+  /* Applies to all elements with <... class="someclass"> specified. */
+  .someclass { color: red; }
+
+
+  .body {
+    width: 100%;
+    margin: 0;
+    border: '2px solid green';
+  }
+
+  .Button {
+    padding: 20px;
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 5px;
+  }
+
+  .bottomborder {
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 0.5px;
+  }
+
+  .noPad {padding: 0px 0px 0px 0px;}
+  .noMar {margin: 0px 0px 0px 0px;}
+  
+  /* Applies to the element with <... id="someid"> specified. */
+  #someid { color: green; }
