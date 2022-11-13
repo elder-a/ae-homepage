@@ -2,39 +2,29 @@ import laddify from './img/laddify.png';
 import button from './img/button.jpg';
 import laser from './img/laser.jpg';
 import '../css/projects.css';
-
+import CardBox from './CardBox';
 
 function Projects() {
+
+  const laddTitle = "Laddify";
+  const laddYears = "2021-2022";
+  const laddContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies efficitur euismod. Donec leo ex, sagittis eu erat non, vestibulum rutrum mi. Nullam suscipit ornare ligula, accumsan fringilla urna tempor at. Donec molestie metus turpis, ut venenatis risus laoreet eu. Ut at tortor ac dolor sollicitudin elementum ac sed sem.";
+
+  const buttonTitle = "Digital Button";
+  const buttonYears = "2021";
+  const buttonContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies efficitur euismod. Donec leo ex, sagittis eu erat non, vestibulum rutrum mi. Nullam suscipit ornare ligula, accumsan fringilla urna tempor at. Donec molestie metus turpis, ut venenatis risus laoreet eu. Ut at tortor ac dolor sollicitudin elementum ac sed sem.";
+
+  const laserTitle = "Laser Projector";
+  const laserYears ="2017";
+  const laserContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies efficitur euismod. Donec leo ex, sagittis eu erat non, vestibulum rutrum mi. Nullam suscipit ornare ligula, accumsan fringilla urna tempor at. Donec molestie metus turpis, ut venenatis risus laoreet eu. Ut at tortor ac dolor sollicitudin elementum ac sed sem.";
+
   return (
     <div className="backGroundPro backGroundSizeExpPro">
-      <div className="blankSpacePro"></div>
-      <div className="standardBox">
-        <img className="imgBoxSize" src={laddify} alt="ldd"></img>
-        <div>
-          <h1 className="textFont boxHeadline">Laddify</h1>
-          <p className="textFont" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies efficitur euismod. Donec leo ex, sagittis eu erat non, vestibulum rutrum mi. Nullam suscipit ornare ligula, accumsan fringilla urna tempor at. Donec molestie metus turpis, ut venenatis risus laoreet eu. Ut at tortor ac dolor sollicitudin elementum ac sed sem.</p>
-        </div>
-      </div>
-
-
       <div className="backColorPro">
-      <div className="blankSpacePro"></div>
-      <div className="standardBox">
-        <img className="imgBoxSize" src={button} alt="digital button"></img>
-        <div>
-          <h1 className="textFont boxHeadline">Digital button </h1>
-          <p className="textFont" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies efficitur euismod. Donec leo ex, sagittis eu erat non, vestibulum rutrum mi. Nullam suscipit ornare ligula, accumsan fringilla urna tempor at. Donec molestie metus turpis, ut venenatis risus laoreet eu. Ut at tortor ac dolor sollicitudin elementum ac sed sem.</p>
-        </div>
-      </div>
-
-      <div className="blankSpacePro"></div>
-      <div className="standardBox">
-        <img className="imgBoxSize" src={laser} alt="laser projector"></img>
-        <div>
-          <h1 className="textFont boxHeadline">Laser Projector</h1>
-          <p className="textFont" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies efficitur euismod. Donec leo ex, sagittis eu erat non, vestibulum rutrum mi. Nullam suscipit ornare ligula, accumsan fringilla urna tempor at. Donec molestie metus turpis, ut venenatis risus laoreet eu. Ut at tortor ac dolor sollicitudin elementum ac sed sem.</p>
-        </div>
-      </div>
+        <CardBox title={laddTitle} years={laddYears} paragraph={laddContent} img={laddify} cardType="blankSpacePro"></CardBox>
+        <CardBox title={buttonTitle} years={buttonYears} paragraph={buttonContent} img={button} cardType="blankSpacePro"></CardBox>
+        <CardBox title={laserTitle} years={laserYears} paragraph={laserContent} img={laser} cardType="blankSpacePro"></CardBox>
+        <div className="blankSpacePro"></div>
       </div>
       <div className="blankSpacePro"></div>
     </div>

@@ -2,9 +2,7 @@
 function DailyUpdates() {
   return (
     <div>
-      <p>
-        This is a page with daily updated info. 
-      </p>
+        <h1>Work in progress...</h1>
     </div>
   );
 }
