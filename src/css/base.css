@@ -1,15 +1,9 @@
 /* Applies to the entire body of the HTML document (except where overridden by more specific
 selectors). */
 
-body {
-  background-color: lightblue;
-}
-
 
   /* Applies to all elements with <... class="someclass"> specified. */
   /* NavBar Styles */
-  .someclass { color: red; }
-
   .body {
     width: 100%;
     margin: 0;

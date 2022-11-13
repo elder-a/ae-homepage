@@ -14,27 +14,27 @@ p {
 }
 
   /* Expericnes styles */
-  .backGroundExp {
-    background-color: lightcoral;
+  .backGroundPro {
+    background-color: #d2fdbb;
     height: 100%;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
   }
 
-  .backGroundSizeExp {
+  .backGroundSizePro {
     height: 93.1vh;
-    background-color: lightcoral;
+    background-color: #d2fdbb;
   }
 
-  .backColor{background-color: lightcoral;}
+  .backColorPro{background-color: #d2fdbb;}
 
   .textFont {
     font-family: "Courier New", Courier, monospace;
   }
 
-  .blankSpace {
+  .blankSpacePro {
     height: 10vh;
-    background-color: lightcoral;
+    background-color: #d2fdbb;
   }
 
   .standardBox {
