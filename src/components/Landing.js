@@ -3,8 +3,9 @@ import "../css/base.css";
 function Landing() {
   return (
     <div className="backGround backGroundSize ">
-      <div className="typewriterHi">
-        <p className="textHiLocation">
+      <div className="blankSpaceLand"></div>
+      <div className="backGroundColorLand">
+        <p className="textHiLocation typewriter">
           HI
         </p>
       </div>

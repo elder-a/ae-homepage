@@ -49,18 +49,20 @@ selectors). */
     margin: 0px 0px 0px 0px;
   }
 
+  .backGroundColorLand {
+    background-color: lightblue;
+  }
+
+  .blankSpaceLand{
+    background-color: lightblue;
+    height: 10%;
+  }
+
   .backGroundSize {
     height: 93.1vh;
   }
 
   /* top, right, bottom, left */
-  .textHiLocation {
-    padding: 5% 0% 0% 10%;
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
-    font-size: 25vh;
-    background-color: lightblue;
-  }
   
   .textAndrewLocation {
     padding: 4% 10% 0% 10%;
@@ -68,6 +70,10 @@ selectors). */
     font-weight: bold;
     font-size: 10vh;
     background-color: lightblue;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 2s forwards;
+
   }
 
   .textTitleLocation {
@@ -76,7 +82,69 @@ selectors). */
     font-weight: bold;
     font-size: 5vh;
     background-color: lightblue;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 2s forwards;
   }
+
+
+
+  .textHiLocation {
+    margin: 0% 0% 0% 10%;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 25vh;
+    position: relative;
+    width: max-content;
+  }
+
+  .textHiLocation::before,
+  .textHiLocation::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .textHiLocation::before{
+    background: lightblue;
+    animation: 
+      typewriter 1s steps(2) 250ms forwards;
+  }
+
+  .textHiLocation::after{
+    width: 0.125em;
+    background: black;
+    animation: 
+      typewriter 1s steps(2) 250ms forwards,
+      blink 750ms steps(2) infinite;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+
+
 
 
 
