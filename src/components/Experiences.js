@@ -12,18 +12,18 @@ function Experiences() {
 
   const opgTitle = "Ontario Power Generation";
   const opgYears = "2020-2021";
-  const opgContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies efficitur euismod. Donec leo ex, sagittis eu erat non, vestibulum rutrum mi. Nullam suscipit ornare ligula, accumsan fringilla urna tempor at. Donec molestie metus turpis, ut venenatis risus laoreet eu. Ut at tortor ac dolor sollicitudin elementum ac sed sem.";
+  const opgContent = "I had the great opportunity of working at OPG on a one-year Co-op. Here I developed software that controlled devices in one of OPG’s nuclear power plants. This software ran on PLCs. I also familiarized myself with technical writing and documentation in this highly regulated field.";
 
   const adpTitle = "ADP";
   const adpYears = "2022-Onward";
-  const adpContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies efficitur euismod. Donec leo ex, sagittis eu erat non, vestibulum rutrum mi. Nullam suscipit ornare ligula, accumsan fringilla urna tempor at. Donec molestie metus turpis, ut venenatis risus laoreet eu. Ut at tortor ac dolor sollicitudin elementum ac sed sem.";
+  const adpContent = "I am very grateful to currently work at this great company. I work as part of the team on ADP’s flagship product Work Force Now. The team I work for helps people around the world manage their human capital and pay their employees.";
 
   return (
     <div className="backGroundExp backGroundSizeExp">
       <div className="backColor">
-        <CardBox title={macMasterTitle} years={macMasterYears} paragraph={macMasterContent} img={mcmaster} cardType="blankSpace"></CardBox>
-        <CardBox title={opgTitle} years={opgYears} paragraph={opgContent} img={opg} cardType="blankSpace"></CardBox>
-        <CardBox title={adpTitle} years={adpYears} paragraph={adpContent} img={adp} cardType="blankSpace"></CardBox>
+        <CardBox title={macMasterTitle} years={macMasterYears} paragraph={macMasterContent} img={mcmaster} showLink="false" cardType="blankSpace"></CardBox>
+        <CardBox title={opgTitle} years={opgYears} paragraph={opgContent} img={opg} showLink="false" cardType="blankSpace"></CardBox>
+        <CardBox title={adpTitle} years={adpYears} paragraph={adpContent} img={adp} showLink="false" cardType="blankSpace"></CardBox>
         <div className="blankSpace"></div>
       </div>
     </div>

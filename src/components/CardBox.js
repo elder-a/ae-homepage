@@ -10,6 +10,9 @@ function CardBox(props) {
           <h1 className="textFont boxHeadline">{props.title}</h1>
           <h2 className=""> {props.years}</h2>
           <p className="textFont" > {props.paragraph} </p>
+          { props.showLink === "true" &&
+          <p className="textFont" > A video about this project can be found <a href={props.videolink}>here</a>. </p>
+          }
         </div>
       </div>
     </div>
