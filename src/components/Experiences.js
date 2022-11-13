@@ -8,7 +8,7 @@ function Experiences() {
 
   const macMasterTitle = "McMaster University";
   const macMasterYears = "2017-2022";
-  const macMasterContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies efficitur euismod. Donec leo ex, sagittis eu erat non, vestibulum rutrum mi. Nullam suscipit ornare ligula, accumsan fringilla urna tempor at. Donec molestie metus turpis, ut venenatis risus laoreet eu. Ut at tortor ac dolor sollicitudin elementum ac sed sem.";
+  const macMasterContent = "This is where I went to school for Computer Engineering. McMaster is in Hamilton, Ontario. I learned many different things throughout my time here. I worked on many different projects while at school including making an AI controlled car, my capstone project Laddify and making a hardware-based image compression algorithm.";
 
   const opgTitle = "Ontario Power Generation";
   const opgYears = "2020-2021";

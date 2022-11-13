@@ -1,4 +1,3 @@
-import mcmaster from './img/mcmaster.jpg';
 import '../css/experiances.css';
 
 function CardBox(props) {

@@ -37,19 +37,6 @@ p {
     background-color: #d2fdbb;
   }
 
-  .standardBox {
-    height: 40vh;
-    width: 50vw;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    background-color: white;
-    border: 4px solid black;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-  }
-
   .imgBoxSize{
     height: auto;
     width: 20vw;
