@@ -72,7 +72,7 @@ selectors). */
     background-color: lightblue;
     opacity: 0;
     transform: translateY(3rem);
-    animation: fadeInUp 3s ease 3s forwards;
+    animation: fadeInUp 3s ease 2.5s forwards;
 
   }
 
@@ -84,7 +84,7 @@ selectors). */
     background-color: lightblue;
     opacity: 0;
     transform: translateY(3rem);
-    animation: fadeInUp 3s ease 4s forwards;
+    animation: fadeInUp 3s ease 3s forwards;
   }
 
 

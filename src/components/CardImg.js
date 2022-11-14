@@ -1,5 +1,5 @@
 
-function Album() {
+function CardImg() {
   return (
     <div>
         <h1>Work in progress...</h1>
@@ -7,4 +7,4 @@ function Album() {
   );
 }
 
-export default Album;
+export default CardImg;
