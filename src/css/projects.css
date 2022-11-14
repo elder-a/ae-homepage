@@ -15,7 +15,7 @@ p {
 
   /* Expericnes styles */
   .backGroundPro {
-    background-color: #d2fdbb;
+    background-color: #ffffd1;
     height: 100%;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
@@ -23,10 +23,10 @@ p {
 
   .backGroundSizePro {
     height: 93.1vh;
-    background-color: #d2fdbb;
+    background-color: #ffffd1;
   }
 
-  .backColorPro{background-color: #d2fdbb;}
+  .backColorPro{background-color: #ffffd1;}
 
   .textFont {
     font-family: "Courier New", Courier, monospace;
@@ -34,7 +34,7 @@ p {
 
   .blankSpacePro {
     height: 10vh;
-    background-color: #d2fdbb;
+    background-color: #ffffd1;
   }
 
   .imgBoxSize{
