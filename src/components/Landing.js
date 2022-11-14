@@ -6,15 +6,18 @@ function Landing() {
       <div className="blankSpaceLand"></div>
       <div className="backGroundColorLand">
         <p className="textHiLocation typewriter">
-          HI
+          Hey there,
         </p>
       </div>
+
+      <div className="backGroundColorLand">
       <p className="textAndrewLocation">
         I'm Andrew Elder.
       </p>
       <p className="textTitleLocation">
         An Application Developer in Toronto, Canada.
       </p>
+      </div>
     </div>
   );
 }

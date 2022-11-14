@@ -59,7 +59,7 @@ selectors). */
   }
 
   .backGroundSize {
-    height: 93.1vh;
+    height: 94vh;
   }
 
   /* top, right, bottom, left */
@@ -72,7 +72,7 @@ selectors). */
     background-color: lightblue;
     opacity: 0;
     transform: translateY(3rem);
-    animation: fadeInUp 2s ease 2s forwards;
+    animation: fadeInUp 3s ease 3s forwards;
 
   }
 
@@ -84,7 +84,7 @@ selectors). */
     background-color: lightblue;
     opacity: 0;
     transform: translateY(3rem);
-    animation: fadeInUp 2s ease 2s forwards;
+    animation: fadeInUp 3s ease 4s forwards;
   }
 
 
@@ -93,7 +93,7 @@ selectors). */
     margin: 0% 0% 0% 10%;
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
-    font-size: 25vh;
+    font-size: 24vh;
     position: relative;
     width: max-content;
   }
@@ -111,15 +111,15 @@ selectors). */
   .textHiLocation::before{
     background: lightblue;
     animation: 
-      typewriter 1s steps(2) 250ms forwards;
+      typewriter 2s steps(10) 250ms forwards;
   }
 
   .textHiLocation::after{
     width: 0.125em;
     background: black;
     animation: 
-      typewriter 1s steps(2) 250ms forwards,
-      blink 750ms steps(2) infinite;
+      typewriter 2s steps(10) 250ms forwards,
+      blink 750ms steps(10) infinite;
   }
 
   @keyframes typewriter {
