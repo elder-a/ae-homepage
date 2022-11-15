@@ -25,10 +25,10 @@ function Landing() {
       <div className="blankSpaceLand"></div>
       <div className="backGroundColorLand">
         { isMobile ===false && 
-          <p className="textHiLocation typewriter"> Hey there, </p>
+          <p className="textHiThereLocation">Hey there,</p>
         }
         { isMobile ===true && 
-          <p className="textHiLocation typewriter"> Hi </p>
+          <p className="textHiLocation">Hi</p>
         }
       </div>
 

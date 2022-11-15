@@ -1,7 +1,10 @@
-import CardImg from "./CardImg";
+import CardRow from "./CardRow";
 import '../css/gallery.css';
 
 function Gallery() {
+
+
+  
   return (
     <div className="backGroundGal backGroundSizeGal">
       <div id="Gallery Title">
@@ -10,13 +13,8 @@ function Gallery() {
         <div className="blankSpaceGalleryBottom"></div>
         <div className="blankSpaceGallery"></div>
       </div>
-
-      <div className="standardBoxOver">
-        <CardImg />
-        <CardImg />
-        <CardImg />
-      </div>
       
+      <CardRow rows={2} ></CardRow>
     </div>
   );
 }
