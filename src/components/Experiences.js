@@ -20,10 +20,15 @@ function Experiences() {
 
   return (
     <div className="backGroundExp backGroundSizeExp">
-      <div className="backColor">
-        <CardBox title={macMasterTitle} years={macMasterYears} paragraph={macMasterContent} img={mcmaster} showLink="false" cardType="blankSpace"></CardBox>
-        <CardBox title={opgTitle} years={opgYears} paragraph={opgContent} img={opg} showLink="false" cardType="blankSpace"></CardBox>
+        <div id="expericne Title">
+          <div className="blankSpaceExp"></div>
+          <h1 className="titleExp">Experiences</h1>
+          <div className="blankSpaceExpBottom"></div>
+        </div>
+        <div className="backColor">
         <CardBox title={adpTitle} years={adpYears} paragraph={adpContent} img={adp} showLink="false" cardType="blankSpace"></CardBox>
+        <CardBox title={opgTitle} years={opgYears} paragraph={opgContent} img={opg} showLink="false" cardType="blankSpace"></CardBox>
+        <CardBox title={macMasterTitle} years={macMasterYears} paragraph={macMasterContent} img={mcmaster} showLink="false" cardType="blankSpace"></CardBox>
         <div className="blankSpace"></div>
       </div>
     </div>

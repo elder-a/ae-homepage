@@ -47,6 +47,29 @@ p {
     border-right-width: 4px;
   }
 
+  .titlePro {
+    font-weight: bold;
+    text-decoration: none;  
+    font-size: 8vh;
+    text-align:center;
+  }
+  
+  .blankSpacePro {
+    height: 10vh;
+    background-color: #ffffd1;
+  }
+  
+  .blankSpaceProBottom{
+    text-align:center;
+    height: 2vh;
+    width: 50vw;
+    margin: 0px 0px 0px 25vw;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    background-color: #ffffd1;
+  }
+
 
 
 

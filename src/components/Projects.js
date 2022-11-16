@@ -23,6 +23,11 @@ function Projects() {
 
   return (
     <div className="backGroundPro backGroundSizeExpPro">
+      <div id="expericne Title">
+        <div className="blankSpacePro"></div>
+          <h1 className="titlePro">Projects</h1>
+        <div className="blankSpaceProBottom"></div>
+      </div>
       <div className="backColorPro">
         <CardBox title={laddTitle} years={laddYears} paragraph={laddContent} img={laddify} videolink={laddLink} showLink="true" cardType="blankSpacePro"></CardBox>
         <CardBox title={buttonTitle} years={buttonYears} paragraph={buttonContent} img={button} videolink={buttonLink} showLink="true" cardType="blankSpacePro"></CardBox>
