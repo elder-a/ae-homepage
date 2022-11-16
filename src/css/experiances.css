@@ -41,29 +41,39 @@ p {
     background-color: lightcoral;
   }
 
+  /* top, right, bottom, left */
   .standardBox {
     height: 40vh 100%;
     width: 70vw;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     background-color: white;
-    border: 4px solid black;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
-    border-radius: 10px;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2)
   }
 
   .imgBoxSize{
     height: auto;
     width: 20vw;
-    border: 2px solid black;
     margin: 0px 1vh 0px 0px;
-    border-right-style: solid;
-    border-right-color: black;
-    border-right-width: 4px;
+
   }
+
+  .imgBoxSizeMobile{
+    height: auto;
+    width: 70vw;
+    margin: 0px 1vh 0px 0px;
+  }
+
+  .textSizeMobile{
+    height: auto;
+    width: 75vw;
+
+  }
+
 
 
   .titleExp {

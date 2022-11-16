@@ -37,15 +37,6 @@ p {
     background-color: #ffffd1;
   }
 
-  .imgBoxSize{
-    height: auto;
-    width: 20vw;
-    border: 2px solid black;
-    margin: 0px 1vh 0px 0px;
-    border-right-style: solid;
-    border-right-color: black;
-    border-right-width: 4px;
-  }
 
   .titlePro {
     font-weight: bold;

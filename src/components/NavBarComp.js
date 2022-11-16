@@ -10,7 +10,7 @@ import linkedin from'./img/linkedin.png';
 function NavBarComp() {
 
   return (
-    <div className="bottomborder navBarFont" >
+    <div className="navBarFont" >
       <Navbar bg="light" expand="lg"  className="someclass">
         <div className="noMar noPad fullWidth">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
