@@ -22,7 +22,7 @@ p {
 
   /* Expericnes styles */
   .backGroundExp {
-    background-color: lightcoral;
+    background-color: #ffc2d1;
     height: 100%;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
@@ -30,15 +30,15 @@ p {
 
   .backGroundSizeExp {
     height: 93.1vh;
-    background-color: lightcoral;
+    background-color: #ffc2d1;
   }
 
-  .backColor{background-color: lightcoral;}
+  .backColor{background-color: #ffc2d1;}
 
 
   .blankSpace {
     height: 10vh;
-    background-color: lightcoral;
+    background-color: #ffc2d1;
   }
 
   /* top, right, bottom, left */
@@ -52,7 +52,11 @@ p {
     margin-right: auto;
     display: flex;
     flex-direction: row;
-    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2)
+  }
+
+  .boxShadow{
+    box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.2);
+    border: 8px 8px 8px 4px black;
   }
 
   .imgBoxSize{
@@ -85,7 +89,7 @@ p {
   
   .blankSpaceExp {
     height: 10vh;
-    background-color: lightcoral;
+    background-color: #ffc2d1;
   }
   
   .blankSpaceExpBottom{
@@ -96,7 +100,7 @@ p {
     border-bottom-style: solid;
     border-bottom-color: black;
     border-bottom-width: 2px;
-    background-color: lightcoral;
+    background-color: #ffc2d1;
   }
 
 
