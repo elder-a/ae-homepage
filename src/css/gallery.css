@@ -77,12 +77,12 @@ selectors). */
 }
 
 .imgBoxGallery {
-  height: 45vh;
+  height: 30vh;
   width: 25vw;
 }
 
 .mobileimgBoxGallery {
-  height: 45vh;
+  height: 40vh;
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
@@ -93,6 +93,9 @@ selectors). */
   background-color: #fee1e8;
   margin-left: auto;
   margin-right: auto;
+  height: 30vh;
+  width: 100%;
+  padding: 4px 4px 4px 4px;
 }
 
 .divCenter{

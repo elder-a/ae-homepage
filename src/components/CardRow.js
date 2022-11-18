@@ -1,8 +1,5 @@
 import CardImg from "./CardImg";
 import '../css/gallery.css';
-import laser from './img/laser.jpg';
-import button from './img/button.jpg';
-import mcmaster from './img/mcmaster.jpg';
 import { useState, useEffect } from 'react';
 
 function CardRow(props) {
@@ -23,18 +20,13 @@ function CardRow(props) {
 
   const isMobile = width <= 768;
 
-  const imageSrcs = [
-    { source: laser},
-    { source: button },
-    { source: mcmaster},
-  ];
 
   return (
     <div >
       { isMobile===true &&
       <div className="mobileBoxOver">
         <div className="sidePadding"></div>
-        {imageSrcs.map((list) => (
+        {props.imageSrc.map((list) => (
           <CardImg source={list.source} />
         ))}
         <div className="sidePadding"></div>
@@ -44,7 +36,7 @@ function CardRow(props) {
       { isMobile===false &&
       <div className="standardBoxOver">
         <div className="sidePadding"></div>
-        {imageSrcs.map((list) => (
+        {props.imageSrc.map((list) => (
           <CardImg source={list.source} />
         ))}
         <div className="sidePadding"></div>

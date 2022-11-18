@@ -36,9 +36,9 @@ function CardBox(props) {
     forceUpdate();
   }
 
-    function outBox(e) {
-      //boxShadow = 'standardBox';
-      forceUpdate();
+  function outBox(e) {
+    //boxShadow = 'standardBox';
+    forceUpdate();
   }
 
   return (
@@ -55,20 +55,21 @@ function CardBox(props) {
                 <img className="imgBoxSizeMobile" src={props.img} alt="not found"></img>
               </div>
               <div>
-                  <h1 className="textFont boxHeadline">{props.title}</h1>
+                <h1 className="textFont boxHeadline">{props.title}</h1>
               </div>
             </div>
 
           }
-
-          {isMobile === false &&
-            <h1 className="textFont boxHeadline">{props.title}</h1>
-          }
-          <h2 className=""> {props.years}</h2>
-          <p className="textFont" > {props.paragraph} </p>
-          {props.showLink === "true" &&
-            <p className="textFont" > A video about this project can be found <a href={props.videolink}>here</a>. </p>
-          }
+          <div className="textSpace">
+            {isMobile === false &&
+              <h1 className="textFont boxHeadline">{props.title}</h1>
+            }
+            <h2 className=""> {props.years}</h2>
+            <p className="textFont" > {props.paragraph} </p>
+            {props.showLink === "true" &&
+              <p className="textFont" > A video about this project can be found <a href={props.videolink}>here</a>. </p>
+            }
+          </div>
         </div>
       </div>
     </div>

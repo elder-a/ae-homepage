@@ -45,7 +45,7 @@ p {
   .standardBox {
     height: 40vh 100%;
     width: 70vw;
-    padding: 0px 0px 0px 0px;
+    padding: 0vh 0vw 0vh 0vw;
     margin: 0px 0px 0px 0px;
     background-color: white;
     margin-left: auto;
@@ -70,6 +70,10 @@ p {
     height: auto;
     width: 70vw;
     margin: 0px 1vh 0px 0px;
+  }
+
+  .textSpace{
+    margin: 0px 1vw 0px 1vw;
   }
 
   .textSizeMobile{
