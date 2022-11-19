@@ -1,14 +1,14 @@
 import { useEffect, useRef } from 'react';
 import { getActvityPromise} from '../services/BoredService';
 import React from 'react';
+import '../css/updates.css'; 
 
-function DailyUpdates() {
+function Bored() {
 
   let actualActivity =  useRef();
 
   const [, updateState] = React.useState();
   const forceUpdate = React.useCallback(() => updateState({}), []);
-  console.log("render");
 
   useEffect(() => {
     getActvityPromise().then((bored) => {
@@ -22,9 +22,9 @@ function DailyUpdates() {
   //NOT Triggering a re render of the page was the issue :O
   return (
     <div>
-        <p>Are you bored then... {actualActivity.current}</p>
+        <h2>Are you bored? If you are why dont you...{actualActivity.current}.</h2>
     </div>
   );
 }
 
-export default DailyUpdates;
+export default Bored;

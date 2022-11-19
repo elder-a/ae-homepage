@@ -19,7 +19,7 @@ function NavBarComp() {
               <Nav.Link href="/home">Home</Nav.Link>
               <Nav.Link href="/experiences">Experiences</Nav.Link>
               <Nav.Link href="/projects">Projects</Nav.Link>
-              <Nav.Link href="/dayUpdates">Dailys</Nav.Link>
+              <Nav.Link href="/updates">Updates</Nav.Link>
               <Nav.Link href="/gallery">Gallery</Nav.Link>
             </Nav>
             <a href="https://www.linkedin.com/in/andrew-william-elder/">

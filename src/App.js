@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBarComp from "./components/NavBarComp";
 import "./css/base.css"
 import Experiences from "./components/Experiences";
-import DailyUpdates from "./components/DailyUpdates";
+import Updates from "./components/Updates";
 import Projects from "./components/Projects";
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
           <Routes>
             <Route path="gallery" element={<Gallery />} />
             <Route path="experiences" element={<Experiences />} />
-            <Route path="dayUpdates" element={<DailyUpdates />} />
+            <Route path="updates" element={<Updates />} />
             <Route path="projects" element={<Projects />} />
             <Route path="*" element={<Landing />} />
           </Routes>
