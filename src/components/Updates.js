@@ -1,13 +1,8 @@
-import { useEffect, useRef } from 'react';
-import { getActvityPromise } from '../services/BoredService';
-import React from 'react';
 import Bored from './Bored';
+import Cat from './Cat';
 import '../css/updates.css'; 
 
 function Updates() {
-
-
-
   return (
     <div>
       <div className="backGroundUp backGroundSizeUp">
@@ -20,9 +15,15 @@ function Updates() {
         <div className="localCard">
         <Bored></Bored>
         </div>
+        <div className="blankSpaceUp"></div>
       </div>
     </div>
   );
 }
 
+/*
+        <div className="localCard">
+        <Cat></Cat>
+        </div>
+*/
 export default Updates;

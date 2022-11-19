@@ -8,7 +8,6 @@ export async function getActvityPromise() {
 }
 
 export async function getActvity() {
-
     fetch("https://www.boredapi.com/api/activity/") //1
     .then((response) => response.json()) //2
     .then((bored) => {
