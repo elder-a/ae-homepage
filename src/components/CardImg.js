@@ -24,14 +24,14 @@ function CardImg(props) {
       {isMobile === true &&
         <div className="mobileimgBoxGallery">
           <div className="divCenter">
-            <img className="standardBoxMiddle" src={props.source} alt="laser"></img>
+            <img className="standardBoxMiddle" src={props.source} alt="noImg"></img>
           </div>
         </div>
       }
       {isMobile === false &&
         <div className="imgBoxGallery">
           <div className="divCenter">
-            <img className="standardBoxMiddle" src={props.source} alt="laser"></img>
+            <img className="standardBoxMiddle" src={props.source} alt="noImg"></img>
           </div>
         </div>
       }

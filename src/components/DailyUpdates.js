@@ -1,8 +1,23 @@
+import { useEffect } from 'react';
+import { getActvity, getActvityPromise} from '../services/BoredService';
 
 function DailyUpdates() {
+
+  let actualActivity;
+
+
+  useEffect(() => {
+    getActvityPromise().then((bored) => {
+      actualActivity = bored.activity;
+      console.log("Bored in location"); 
+      console.log(actualActivity);
+    });
+  }, []);
+
+
   return (
     <div>
-        <h1>Work in progress...</h1>
+        <p>Are you bored then... {actualActivity}</p>
     </div>
   );
 }
