@@ -1,5 +1,5 @@
 import Bored from './Bored';
-import Cat from './Cat';
+import Taylor from './Taylor';
 import '../css/updates.css'; 
 
 function Updates() {
@@ -14,6 +14,10 @@ function Updates() {
         </div>
         <div className="localCard">
         <Bored></Bored>
+        </div>
+        <div className="blankSpaceUp"></div>
+        <div className="localCard">
+        <Taylor></Taylor>
         </div>
         <div className="blankSpaceUp"></div>
       </div>
