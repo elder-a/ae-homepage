@@ -1,10 +1,11 @@
 import Bored from './Bored';
 import Taylor from './Taylor';
 import '../css/updates.css'; 
+import Joke from './Joke';
 
 function Updates() {
   return (
-    <div>
+    <div className="backColorUp">
       <div className="backGroundUp backGroundSizeUp">
         <div id="Update Title">
           <div className="blankSpaceUp"></div>
@@ -20,14 +21,12 @@ function Updates() {
         <Taylor></Taylor>
         </div>
         <div className="blankSpaceUp"></div>
+        <div className="localCard">
+        <Joke></Joke>
+        </div>
       </div>
     </div>
   );
 }
 
-/*
-        <div className="localCard">
-        <Cat></Cat>
-        </div>
-*/
 export default Updates;
