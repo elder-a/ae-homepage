@@ -18,20 +18,22 @@ function CardImg(props) {
 
   const isMobile = width <= 768;
 
+  const source = "https://picsum.photos/450/400?random=" + props.source
+
 
   return (
     <div className="backColorGal">
       {isMobile === true &&
         <div className="mobileimgBoxGallery">
           <div className="divCenter">
-            <img className="standardBoxMiddle" src={props.source} alt="noImg"></img>
+            <img className="standardBoxMiddle" src={source} alt="noImg"></img>
           </div>
         </div>
       }
       {isMobile === false &&
         <div className="imgBoxGallery">
           <div className="divCenter">
-            <img className="standardBoxMiddle" src={props.source} alt="noImg"></img>
+            <img className="standardBoxMiddle" src={source} alt="noImg"></img>
           </div>
         </div>
       }
