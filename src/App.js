@@ -8,6 +8,9 @@ import "./css/base.css"
 import Experiences from "./components/Experiences";
 import Updates from "./components/Updates";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Wock from "./components/Wock";
+import Scrapple from "./components/Scrapple";
 
 export default function App() {
   return (
@@ -19,6 +22,9 @@ export default function App() {
             <Route path="experiences" element={<Experiences />} />
             <Route path="updates" element={<Updates />} />
             <Route path="projects" element={<Projects />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="wock" element={<Wock />} />
+            <Route path="scrapple" element={<Scrapple />} />
             <Route path="*" element={<Landing />} />
           </Routes>
         </BrowserRouter>

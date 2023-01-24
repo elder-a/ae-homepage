@@ -1,5 +1,4 @@
 import Bored from './Bored';
-import Taylor from './Taylor';
 import '../css/updates.css'; 
 import Joke from './Joke';
 
@@ -15,10 +14,6 @@ function Updates() {
         </div>
         <div className="localCard">
         <Bored></Bored>
-        </div>
-        <div className="blankSpaceUp"></div>
-        <div className="localCard">
-        <Taylor></Taylor>
         </div>
         <div className="blankSpaceUp"></div>
         <div className="localCard">
