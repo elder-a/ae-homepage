@@ -4,14 +4,16 @@ import { useState, useEffect } from 'react';
 import { validateInput, letterMaker, validateAgainstLetter, wordScorer } from '../services/validaitonHelpers';
 import { getWordPromise } from '../services/wordService';
 
+let wordCounter = 0;
+
 function Scrapple() {
 
   const [showError, setShowError] = useState(false);
   const [message, setMessage] = useState();
   const [genNumbers, setGenNumbers] = useState();
-  const [wordScore, setwordScore] = useState();
   const [validWord, setValidWord] = useState(false);
-  const [finalWord, setFinalWord] = useState();
+  const [finalWord, setFinalWord] = useState([]);
+
 
   useEffect(()=>{
     generateNumbers();
@@ -35,10 +37,11 @@ function Scrapple() {
         setValidWord(false);
       } else if(defProm[0].meanings){
         if(validateAgainstLetter(message, genNumbers)){
+          wordCounter++;
+          const wordSet = {word: message, wordScore: wordScorer(message), counter: wordCounter};
+          setFinalWord(finalWord => finalWord.concat(wordSet));
           setShowError(false);
           setValidWord(true);
-          setFinalWord(message);
-          setwordScore(wordScorer(message));
           // setTimeout(setValidWord(false), 3000);
         } else {
           setShowError(true);
@@ -89,11 +92,11 @@ function Scrapple() {
           { showError && 
             <h3>Error Bad Input!</h3> 
           }
-          { validWord && 
+          { finalWord.map((singleWord) => (
             <div>
-              <h3> Your word was {finalWord} and it was worth {wordScore} points! </h3>
+              <h3> {singleWord.counter}. Your word was {singleWord.word} and it was worth {singleWord.wordScore} points! </h3>
             </div>
-          }
+          ))}
         </div>
       </div>
     </div>
