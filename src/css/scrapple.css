@@ -37,6 +37,21 @@ p {
     background-color: #ffcfb3;
   }
 
+  .middleSquish {
+    margin: 0vw 10vw 0vw 10vw;
+  }
+
+  .scrapContainor{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .centerScrap{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
 
   .titleScrap {
     font-weight: bold;

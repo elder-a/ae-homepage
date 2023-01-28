@@ -1,8 +1,14 @@
 
 
-export function validateInput(userInput){
+export function validateInput(userInput, wordArr){
   if(!basicValidaiton(userInput)){
     return false;
+  }
+
+  for (let i in wordArr) {
+    if(userInput == wordArr[i].word){
+      return false;
+    }
   }
   return true;
 }
@@ -46,6 +52,17 @@ export function letterMaker(length) {
   }
   return result;
 }
+
+export function totalSum(wordArr, finalWordVal) {
+  // syntax is bad here
+  let totalScore = 0;
+  for (let i in wordArr) {
+    totalScore += wordArr[i].wordScore;
+  }
+  totalScore += finalWordVal.wordScore;
+  return totalScore;
+}
+
 
 //return letter score 
 //gotta finish adding the letter scores 
