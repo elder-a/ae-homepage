@@ -42,7 +42,7 @@ function CardBox(props) {
   }
 
   return (
-    <div>
+    <div className='borderIssue'>
       <div className={props.cardType}></div>
       <div className={boxShadow} onMouseEnter={intoBox} onMouseLeave={outBox}>
         {isMobile === false &&

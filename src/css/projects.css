@@ -44,6 +44,10 @@ p {
     font-size: 8vh;
     text-align:center;
   }
+
+  .overFlowAllow {
+    overflow:visible
+  }
   
   .blankSpacePro {
     height: 10vh;

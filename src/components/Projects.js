@@ -28,7 +28,7 @@ function Projects() {
           <h1 className="titlePro">Projects</h1>
         <div className="blankSpaceProBottom"></div>
       </div>
-      <div className="backColorPro">
+      <div className="backColorPro overFlowAllow">
         <CardBox title={laddTitle} years={laddYears} paragraph={laddContent} img={laddify} videolink={laddLink} showLink="true" cardType="blankSpacePro"></CardBox>
         <CardBox title={buttonTitle} years={buttonYears} paragraph={buttonContent} img={button} videolink={buttonLink} showLink="true" cardType="blankSpacePro"></CardBox>
         <CardBox title={laserTitle} years={laserYears} paragraph={laserContent} img={laser} videolink={laserLink} showLink="true" cardType="blankSpacePro"></CardBox>

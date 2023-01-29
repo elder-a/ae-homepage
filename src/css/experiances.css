@@ -76,6 +76,11 @@ p {
     margin: 0px 1vw 0px 1vw;
   }
 
+  .borderIssue {
+    outline: 10px solid transparent;
+    padding: 10px;
+  }
+
   .textSizeMobile{
     height: auto;
     width: 75vw;
