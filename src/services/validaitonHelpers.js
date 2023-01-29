@@ -6,7 +6,7 @@ export function validateInput(userInput, wordArr){
   }
 
   for (let i in wordArr) {
-    if(userInput == wordArr[i].word){
+    if(userInput === wordArr[i].word){
       return false;
     }
   }
@@ -66,7 +66,11 @@ export function totalSum(wordArr, finalWordVal) {
 
 //return letter score 
 //gotta finish adding the letter scores 
-function letterScorer(letter){
+export function letterScorer(letter){
+  let lowerLetter = ''
+  if(letter) {
+    lowerLetter = letter.toLowerCase();
+  }
   const letterScores = {
     'a': 1,
     'b': 3,
@@ -95,7 +99,7 @@ function letterScorer(letter){
     'y': 4,
     'z': 10,
   };
-  return letterScores[letter];
+  return letterScores[lowerLetter];
 }
 //returns word score 
 export function wordScorer(word) {

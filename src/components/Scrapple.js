@@ -1,7 +1,8 @@
 import '../css/scrapple.css'; 
 import React from 'react';
+import LetterCard from './LetterCard';
 import { useState, useEffect } from 'react';
-import { validateInput, letterMaker, validateAgainstLetter, wordScorer, totalSum } from '../services/validaitonHelpers';
+import { validateInput, letterMaker, validateAgainstLetter, wordScorer, totalSum, letterScorer } from '../services/validaitonHelpers';
 import { getWordPromise } from '../services/wordService';
 
 let wordCounter = 0;
@@ -61,7 +62,7 @@ function Scrapple() {
   }
 
   function generateNumbers(){
-    setGenNumbers(letterMaker(8));
+    setGenNumbers(letterMaker(6));
     console.log(genNumbers);
   }
 
@@ -75,30 +76,18 @@ function Scrapple() {
           <div className="blankSpaceScrap"></div>
           <div className='backColorScrap middleSquish'>
             <h2>In this game you try to guess the best words given the letters below to make three words. Compete with your friends to see who wins the day!</h2>
-            <p>
-            (1 point)-A, E, I, O, U, L, N, S, T, R
-            </p>
-            <p>
-            (2 points)-D, G
-            </p>
-            <p>
-            (3 points)-B, C, M, P
-            </p>
-            <p>
-            (4 points)-F, H, V, W, Y
-            </p>
-            <p>
-            (5 points)-K
-            </p>
-            <p>
-            (8 points)- J, X
-            </p>
-            <p>
-            (10 points)-Q, Z
-            </p>
+            <div>
+              <div className='scrapContainor'>
+              <LetterCard score={letterScorer(genNumbers !== undefined ? genNumbers[0] : null)} letter={genNumbers !== undefined ? genNumbers[0] : null}></LetterCard>
+              <LetterCard score={letterScorer(genNumbers !== undefined ? genNumbers[1] : null)} letter={genNumbers !== undefined ? genNumbers[1] : null}></LetterCard>
+              <LetterCard score={letterScorer(genNumbers !== undefined ? genNumbers[2] : null)} letter={genNumbers !== undefined ? genNumbers[2] : null}></LetterCard>
+              <LetterCard score={letterScorer(genNumbers !== undefined ? genNumbers[3] : null)} letter={genNumbers !== undefined ? genNumbers[3] : null}></LetterCard>
+              <LetterCard score={letterScorer(genNumbers !== undefined ? genNumbers[4] : null)} letter={genNumbers !== undefined ? genNumbers[4] : null}></LetterCard>
+              <LetterCard score={letterScorer(genNumbers !== undefined ? genNumbers[5] : null)} letter={genNumbers !== undefined ? genNumbers[5] : null}></LetterCard>
+              </div>
+            </div>
             <div className='scrapContainor backColorScrap'>
               <div className='centerScrap'>
-                <h2>Your Letters are: {genNumbers}</h2>
                 <input type='text' name='title' onChange={handleInputChange}></input>
                 <button type="button" onClick={handleSubmit}> Submit!</button>
                 { showError && 
