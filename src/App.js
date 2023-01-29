@@ -24,7 +24,7 @@ export default function App() {
             <Route path="projects" element={<Projects />} />
             <Route path="contact" element={<Contact />} />
             <Route path="wock" element={<Wock />} />
-            <Route path="scrapple" element={<Scrapple />} />
+            <Route path="WordScore" element={<Scrapple />} />
             <Route path="*" element={<Landing />} />
           </Routes>
         </BrowserRouter>

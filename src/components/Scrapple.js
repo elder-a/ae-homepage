@@ -7,6 +7,7 @@ import { getWordPromise } from '../services/wordService';
 
 let wordCounter = 0;
 let totalScoreRes = 0;
+
 function Scrapple() {
 
   const [showError, setShowError] = useState(false);
@@ -23,6 +24,12 @@ function Scrapple() {
     
   function handleInputChange(e) {
     setMessage(e.target.value);
+  }
+
+  function handleKeyDown(e) {
+    if (e.key === 'Enter') {
+      handleSubmit();
+    }
   }
 
   function handleSubmit() {
@@ -45,6 +52,7 @@ function Scrapple() {
             setFinalWord(finalWord => finalWord.concat(wordSet));
             setShowError(false);
             setValidWord(true);
+            document.getElementById('wordSetInput').value='';
 
             if(wordCounter >= 3){
               //run the first time message 
@@ -71,7 +79,7 @@ function Scrapple() {
       <div className="backGroundScrap backGroundSizeUpScrap">
         <div id="Update Title">
           <div className="blankSpaceScrap"></div>
-          <h1 className="titleScrap">Word Set</h1>
+          <h1 className="titleScrap">Word_Score</h1>
           <div className="blankSpaceScrapBottom"></div>
           <div className="blankSpaceScrap"></div>
           <div className='backColorScrap middleSquish'>
@@ -86,23 +94,29 @@ function Scrapple() {
               <LetterCard score={letterScorer(genNumbers !== undefined ? genNumbers[5] : null)} letter={genNumbers !== undefined ? genNumbers[5] : null}></LetterCard>
               </div>
             </div>
-            <div className='scrapContainor backColorScrap'>
-              <div className='centerScrap'>
-                <input type='text' name='title' onChange={handleInputChange}></input>
-                <button type="button" onClick={handleSubmit}> Submit!</button>
+            <div>
+              <div className='scrapContainor backColorScrap'>
+                <div className='centerScrapWidth'>
+                  <input id='wordSetInput' type='text' name='title' onChange={handleInputChange} onKeyDown={handleKeyDown}></input>
+                  <button type="button" onClick={handleSubmit}> Submit!</button>
+                </div>
+              </div>
+              <div className="centerScrap backColorScrap">
+                <div className='centerScrapWrite'>
                 { showError && 
                   <h3>Word Not Found :( </h3> 
                 }
                 { finalWord.map((singleWord) => (
-                  <div>
-                    <h3> {singleWord.counter}. Your word was {singleWord.word} and it was worth {singleWord.wordScore} points! </h3>
+                  <div className="backGroundScrap">
+                    <h3> {singleWord.counter}. Your word was {singleWord.word.toLowerCase()} and it was worth {singleWord.wordScore} points! </h3>
                   </div>
                 ))}
                 { showTotal &&
-                  <div>
-                    <h2> Your combinded score for the day was {totalScoreRes} </h2>
+                  <div className="backGroundScrap">
+                    <h2> Your combinded score for the day was {totalScoreRes}. </h2>
                   </div>
                 }
+                </div>
               </div>
             </div>
           </div>

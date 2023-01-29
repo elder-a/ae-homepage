@@ -1,4 +1,4 @@
-
+import { dailyWordReturn } from "./dailyWordValue";
 
 export function validateInput(userInput, wordArr){
   if(!basicValidaiton(userInput)){
@@ -6,7 +6,7 @@ export function validateInput(userInput, wordArr){
   }
 
   for (let i in wordArr) {
-    if(userInput === wordArr[i].word){
+    if(userInput.toLowerCase() === wordArr[i].word.toLowerCase()){
       return false;
     }
   }
@@ -44,13 +44,7 @@ export function validateAgainstLetter(userWord, generatedLetters){
 }
 
 export function letterMaker(length) {
-  var result           = '';
-  var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  var charactersLength = characters.length;
-  for ( var i = 0; i < length; i++ ) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-  }
-  return result;
+  return dailyWordReturn();
 }
 
 export function totalSum(wordArr, finalWordVal) {
