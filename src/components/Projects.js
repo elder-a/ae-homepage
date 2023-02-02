@@ -34,7 +34,7 @@ function Projects() {
         <CardBox title={laserTitle} years={laserYears} paragraph={laserContent} img={laser} videolink={laserLink} showLink="true" cardType="blankSpacePro"></CardBox>
         <div className="blankSpacePro"></div>
       </div>
-      <div className="blankSpacePro"></div>
+      <div className="blackGap"></div>
     </div>
   );
 }

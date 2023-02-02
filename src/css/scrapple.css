@@ -29,6 +29,12 @@ p {
   font-weight: bold;
 }
 
+.textChange {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 2.4vh;
+  color: black;
+}
 
   /* Expericnes styles */
   .backGroundScrap {
@@ -111,6 +117,10 @@ p {
     border-bottom-color: black;
     border-bottom-width: 2px;
     background-color: #ffcfb3;
+  }
+
+  .inputBorder{
+    border: 3px solid black;
   }
 
   .letterCardTile{

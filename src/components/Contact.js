@@ -11,7 +11,7 @@ function Contact() {
         <div className="blankSpaceCon"></div>
       </div>
       <div className="localCardCon">
-        <h2> Hi again! If you are looking to contact me send me a email at <a href='mailto: andrewelder18@gmail.com'>andrewelder18@gmail.com</a>.</h2>
+        <h2> Hi again! If you are looking to contact me send me a email <a classname="textFont" href='mailto: andrewelder18@gmail.com'>Here</a>.</h2>
       </div>
     </div>
   );

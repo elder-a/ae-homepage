@@ -20,7 +20,6 @@ function NavBarComp() {
               <Nav.Link href="/experiences">Experiences</Nav.Link>
               <Nav.Link href="/projects">Projects</Nav.Link>
               <Nav.Link href="/updates">Updates</Nav.Link>
-              <Nav.Link href="/gallery">Gallery</Nav.Link>
               <Nav.Link href="/WordScore">Word_Score</Nav.Link>
               <Nav.Link href="/contact">Contact</Nav.Link>
             </Nav>

@@ -15,18 +15,22 @@ p {
 
   /* Expericnes styles */
   .backGroundPro {
-    background-color: #ffffd1;
+    background-color: #ffc2d1;
     height: 100%;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
   }
 
-  .backGroundSizePro {
-    height: 93.1vh;
-    background-color: #ffffd1;
+  .blankGap {
+    padding-top: 50px;
   }
 
-  .backColorPro{background-color: #ffffd1;}
+  .backGroundSizePro {
+    height: 93.1vh;
+    background-color: #ffc2d1;
+  }
+
+  .backColorPro{background-color: #ffc2d1;}
 
   .textFont {
     font-family: "Courier New", Courier, monospace;
@@ -34,7 +38,7 @@ p {
 
   .blankSpacePro {
     height: 10vh;
-    background-color: #ffffd1;
+    background-color: #ffc2d1;
   }
 
 
@@ -51,7 +55,7 @@ p {
   
   .blankSpacePro {
     height: 10vh;
-    background-color: #ffffd1;
+    background-color: #ffc2d1;
   }
   
   .blankSpaceProBottom{
@@ -62,7 +66,7 @@ p {
     border-bottom-style: solid;
     border-bottom-color: black;
     border-bottom-width: 2px;
-    background-color: #ffffd1;
+    background-color: #ffc2d1;
   }
 
 

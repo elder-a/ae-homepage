@@ -41,6 +41,10 @@ p {
     background-color: #ffc2d1;
   }
 
+  .blankGap {
+    padding-top: 50px;
+  }
+
   /* top, right, bottom, left */
   .standardBox {
     height: 40vh 100%;

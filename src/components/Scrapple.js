@@ -80,7 +80,6 @@ function Scrapple() {
         <div id="Update Title">
           <div className="blankSpaceScrap"></div>
           <h1 className="titleScrap">Word_Score</h1>
-          <div className="blankSpaceScrapBottom"></div>
           <div className="blankSpaceScrap"></div>
           <div className='backColorScrap middleSquish'>
             <h2>In this game you try to guess the best words given the letters below to make three words. Compete with your friends to see who wins the day!</h2>
@@ -97,8 +96,8 @@ function Scrapple() {
             <div>
               <div className='scrapContainor backColorScrap'>
                 <div className='centerScrapWidth'>
-                  <input id='wordSetInput' type='text' name='title' onChange={handleInputChange} onKeyDown={handleKeyDown}></input>
-                  <button type="button" onClick={handleSubmit}> Submit!</button>
+                  <input id='wordSetInput' className='inputBorder' type='text' name='title' onChange={handleInputChange} onKeyDown={handleKeyDown}></input>
+                  <button type="button" className='inputBorder textChange' onClick={handleSubmit}> SEND </button>
                 </div>
               </div>
               <div className="centerScrap backColorScrap">
@@ -113,7 +112,7 @@ function Scrapple() {
                 ))}
                 { showTotal &&
                   <div className="backGroundScrap">
-                    <h2> Your combinded score for the day was {totalScoreRes}. </h2>
+                    <h2> Your combined score for the day was {totalScoreRes}. </h2>
                   </div>
                 }
                 </div>

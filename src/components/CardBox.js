@@ -44,7 +44,7 @@ function CardBox(props) {
   return (
     <div className='borderIssue'>
       <div className={props.cardType}></div>
-      <div className={boxShadow} onMouseEnter={intoBox} onMouseLeave={outBox}>
+      <div className="standardBox boxShadow" onMouseEnter={intoBox} onMouseLeave={outBox}>
         {isMobile === false &&
           <img className="imgBoxSize" src={props.img} alt="not found"></img>
         }

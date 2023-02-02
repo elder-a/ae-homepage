@@ -29,8 +29,8 @@ function Experiences() {
         <CardBox title={adpTitle} years={adpYears} paragraph={adpContent} img={adp} showLink="false" cardType="blankSpace"></CardBox>
         <CardBox title={opgTitle} years={opgYears} paragraph={opgContent} img={opg} showLink="false" cardType="blankSpace"></CardBox>
         <CardBox title={macMasterTitle} years={macMasterYears} paragraph={macMasterContent} img={mcmaster} showLink="false" cardType="blankSpace"></CardBox>
-        <div className="blankSpace"></div>
       </div>
+      <div className="blankGap blankSpace"></div>
     </div>
   );
 }
